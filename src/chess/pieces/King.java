@@ -12,12 +12,12 @@ public class King extends ChessPiece{
 	}
 
 	@Override
-	public String toString(){
+	public String toString() {
 		return "K";
 	}
 	
 	private boolean canMove(Position position){
-		ChessPiece p =(ChessPiece)getBoard().piece(position);
+		ChessPiece p = (ChessPiece)getBoard().piece(position);
 		return p == null || p.getColor() != getColor();
 	}
 
